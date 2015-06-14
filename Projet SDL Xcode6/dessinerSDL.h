@@ -7,6 +7,6 @@
 #include <SDL/SDL.h>
 #include "constantes.h"
 
-void drawBoard(SDL_Surface *ecran, int taillePlateau, int** plateau);
+void drawBoard(SDL_Surface *ecran, int taillePlateau, int** plateau, int atomes, int score);
 
 #endif

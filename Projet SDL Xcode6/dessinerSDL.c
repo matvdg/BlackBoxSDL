@@ -1,8 +1,8 @@
 #include "dessinerSDL.h"
 
-void drawBoard(SDL_Surface *ecran, int taillePlateau, int** plateau) {
+void drawBoard(SDL_Surface *ecran, int taillePlateau, int** plateau, int atomes, int score) {
 	
-	SDL_Surface *noclick = NULL, *vide = NULL, *atom = NULL, *adjacent = NULL, *reflect = NULL, *zero = NULL, *un = NULL, *deux = NULL, *trois = NULL, *quatre = NULL, *cinq = NULL, *six = NULL, *sept = NULL, *huit = NULL, *neuf = NULL, *hit = NULL, *straight = NULL;
+	SDL_Surface *noclick = NULL, *vide = NULL, *atom = NULL, *adjacent = NULL, *reflect = NULL, *zero = NULL, *un = NULL, *deux = NULL, *trois = NULL, *quatre = NULL, *cinq = NULL, *six = NULL, *sept = NULL, *huit = NULL, *neuf = NULL, *hit = NULL, *straight = NULL,  *scoreRectangle = NULL;
 	noclick = SDL_LoadBMP("/img/0.bmp");
 	vide = SDL_LoadBMP("/img/1.bmp");
 	atom = SDL_LoadBMP("/img/2.bmp");
@@ -30,6 +30,22 @@ void drawBoard(SDL_Surface *ecran, int taillePlateau, int** plateau) {
 	
 	//we fill the screen with blank
 	SDL_FillRect(ecran, NULL, SDL_MapRGB(ecran->format, 255, 255, 255));
+	positionJeu.y = TAILLE_CASE * taillePlateau;
+	for (int i = 0;i<5;i++) {
+		positionJeu.x = TAILLE_CASE * i;
+		SDL_BlitSurface(vide, NULL, ecran, &positionJeu);
+	}
+	for (int i = 0;i<atomes;i++) {
+		positionJeu.x = TAILLE_CASE * i;
+		SDL_BlitSurface(atom, NULL, ecran, &positionJeu);
+	}
+	scoreRectangle = SDL_CreateRGBSurface(SDL_HWSURFACE, TAILLE_CASE * 3 * score / 100, TAILLE_CASE, 32, 0, 0, 0, 0);
+	positionJeu.x = 6*TAILLE_CASE;
+	SDL_FillRect(scoreRectangle, NULL, SDL_MapRGB(ecran->format, 238, 0, 34));
+	SDL_BlitSurface(scoreRectangle, NULL, ecran, &positionJeu); // Collage de la surface sur l'écran
+
+	
+	
 	
 	for(x = 0; x < taillePlateau; x++)
 	{
