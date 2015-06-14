@@ -13,14 +13,14 @@
 
 
 void gestionClic(int x, int y, int** plateau, int taillePlateau, int* status){
-    printf("gestion clik\n");
-	printf("x= %d, y=%d\n",x,y);
+    //printf("gestion clik\n");
+	//printf("x= %d, y=%d\n",x,y);
 	if (x == 0 || x == taillePlateau-1 || y == 0 || y == taillePlateau-1) {
 		// on clique sur les bordures
 		*status = SCORE;
 		lancerRayon(x, y, plateau, taillePlateau);
 		
-	} else {
+	} else if (x > 0 && x < taillePlateau-1 & y > 0 && y < taillePlateau-1) {
 		// on clique dans le plateau pour vérifier si la case est bien un atome
 		if (verifAtome(x, y, plateau)) {
 			*status = TROUVE;
@@ -35,29 +35,29 @@ void gestionClic(int x, int y, int** plateau, int taillePlateau, int* status){
 };
 
 void lancerRayon(int x, int y, int** plateau, int taillePlateau) {
-	printf("lancer rayon\n");
+	//printf("lancer rayon\n");
 	
 	if ( y == 0 && (x != 0 && x != taillePlateau-1 )) {
 		//RAYON VERS LE BAS
-		printf("vers le bas\n");
+		//printf("vers le bas\n");
 		calculerRayon(x, y, plateau, BAS, taillePlateau);
 		
 		
 	} else if ( y == taillePlateau-1 && (x != 0 && x != taillePlateau-1 ) ) {
 		//RAYON VERS LE HAUT
-		printf("vers le haut\n");
+		//printf("vers le haut\n");
 		calculerRayon(x, y, plateau, HAUT,taillePlateau);
 
 		
 	} else if ( x == 0 && (y != 0 && y != taillePlateau-1 ) ) {
 		//RAYON VERS LA DROITE
-		printf("vers le droite\n");
+		//printf("vers la droite\n");
 		calculerRayon(x, y, plateau, DROITE, taillePlateau);
 
 		
 	} else if ( x == taillePlateau-1 && (y != 0 && y != taillePlateau-1 ) ) {
 		//RAYON VERS LA GAUCHE
-		printf("vers le gauche\n");
+		//printf("vers la gauche\n");
 		calculerRayon(x, y, plateau, GAUCHE, taillePlateau);
 
 		
@@ -80,29 +80,29 @@ int verifAtome(int x, int y, int** plateau) {
 
 void calculerRayon(int x, int y, int** plateau, int direction, int taillePlateau) {
 	//enum {NOCLICK, VIDE, ATOM, ADJACENT, REFLECT, ZERO, UN, DEUX, TROIS, QUATRE, CINQ, SIX, SEPT, HUIT, NEUF, HIT, STRAIGHT};
-	
+	int initX = x, initY = y;
 	
 	do {
 		bougerVersDirection(&x, &y, direction, taillePlateau);
-		printf("en train de sauter\n");
+		//printf("en train de sauter\n");
 	} while(plateau[x][y] == VIDE);
 	
 	switch (plateau[x][y]) {
 		case NOCLICK:
 			plateau[x][y] = STRAIGHT;
-			printf("enum= %d straight, x=%d, y=%d\n",plateau[x][y],x,y);
+			printf("straight\n");
 			break;
 		case ADJACENT:
-			//plateau[x][y] = STRAIGHT;
-			printf("%d adjacent\n",plateau[x][y]);
+			calculerAdjacent(x, y, plateau, direction, taillePlateau, initX, initY);
+			printf("adjacent\n");
 			break;
 		case ATOM:
-			//plateau[x][y] = STRAIGHT;
-			printf("%d atom\n",plateau[x][y]);
+			plateau[initX][initY] = HIT;
+			printf("atom\n");
 			break;
 				
-	  default:
-				break;
+		default:
+			break;
 		
 	}
 	
@@ -144,7 +144,9 @@ void bougerVersDirection(int* x, int* y, int direction, int taillePlateau){
 	
 }
 
-
+void calculerAdjacent(int x, int y, int** plateau, int direction, int taillePlateau, int initX, int initY) {
+	
+}
 
 
 

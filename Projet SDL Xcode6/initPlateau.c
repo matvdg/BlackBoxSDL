@@ -7,7 +7,6 @@ void initPlateau(int taillePlateau, int nbAtomes)
     int j=0;
     int** plateau;
 	srand(time(NULL));
-    
     plateau = malloc(taillePlateau*sizeof(int*)); // Génération des lignes
     
     for(i=0; i<taillePlateau; i++)
@@ -27,14 +26,15 @@ void initPlateau(int taillePlateau, int nbAtomes)
         }
         
     }
+	int atomes = nbAtomes;
     
-    while(nbAtomes > 0)  //regarde si la case retombé aléatoirement dessus est déjà à 2, si oui : on laisse et on refait la boucle pour le même atome, si non : on le laisse à 2 et on enlève 1 atome parmi ceux à trouver
+    while(atomes > 0)  //regarde si la case retombé aléatoirement dessus est déjà à 2, si oui : on laisse et on refait la boucle pour le même atome, si non : on le laisse à 2 et on enlève 1 atome parmi ceux à trouver
     {
         int x = rand()%(taillePlateau - 2) + 1;
         int y = rand()%(taillePlateau - 2) + 1;
-        int nombre = nbAtomes;
-        nombre = (plateau[x][y]==2)?(nbAtomes):(nbAtomes-1); //? = if pour la condition ternaire
-        nbAtomes = nombre;
+        int nombre = atomes;
+        nombre = (plateau[x][y]==2)?(atomes):(atomes-1); //? = if pour la condition ternaire
+        atomes = nombre;
         plateau[x][y] = 2;
 		
 		//on place les adjacents
