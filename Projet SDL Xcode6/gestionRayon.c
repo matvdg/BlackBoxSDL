@@ -27,7 +27,6 @@ void gestionClic(int x, int y, int** plateau, int taillePlateau, int* status){
 		} else {
 			*status = PERDU;
 		}
-		//TODO: décrémenter
 		
 	}
 
