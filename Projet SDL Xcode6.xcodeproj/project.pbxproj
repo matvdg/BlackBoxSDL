@@ -7,11 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A38C70591A91E146001CB0E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C70581A91E146001CB0E3 /* AppDelegate.m */; };
-		A38C705B1A91E146001CB0E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C705A1A91E146001CB0E3 /* main.m */; };
-		A38C705D1A91E146001CB0E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38C705C1A91E146001CB0E3 /* Images.xcassets */; };
-		A38C70601A91E146001CB0E3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38C705E1A91E146001CB0E3 /* MainMenu.xib */; };
 		A38C706C1A91E146001CB0E3 /* Projet_SDL_Xcode6Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C706B1A91E146001CB0E3 /* Projet_SDL_Xcode6Tests.m */; };
+		A38C70771A91E35F001CB0E3 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C70761A91E35F001CB0E3 /* SDLMain.m */; };
+		A38C70791A91E39D001CB0E3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A38C70781A91E39D001CB0E3 /* main.c */; };
+		A38C707B1A91E430001CB0E3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38C707A1A91E430001CB0E3 /* Cocoa.framework */; };
+		A38C707D1A91E458001CB0E3 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38C707C1A91E458001CB0E3 /* SDL.framework */; };
+		F6897C201B2C7E300016525B /* choix.c in Sources */ = {isa = PBXBuildFile; fileRef = F6897C1E1B2C7E300016525B /* choix.c */; };
+		F6897C271B2C7E5E0016525B /* initPlateau.c in Sources */ = {isa = PBXBuildFile; fileRef = F6897C211B2C7E5E0016525B /* initPlateau.c */; };
+		F6897C281B2C7E5E0016525B /* dessiner.c in Sources */ = {isa = PBXBuildFile; fileRef = F6897C231B2C7E5E0016525B /* dessiner.c */; };
+		F6897C291B2C7E5E0016525B /* gestionRayon.c in Sources */ = {isa = PBXBuildFile; fileRef = F6897C251B2C7E5E0016525B /* gestionRayon.c */; };
+		F6897C6E1B2C843C0016525B /* 0.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C591B2C843C0016525B /* 0.bmp */; };
+		F6897C6F1B2C843C0016525B /* 1.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C5A1B2C843C0016525B /* 1.bmp */; };
+		F6897C701B2C843C0016525B /* 2.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C5B1B2C843C0016525B /* 2.bmp */; };
+		F6897C711B2C843C0016525B /* 3.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C5C1B2C843C0016525B /* 3.bmp */; };
+		F6897C721B2C843C0016525B /* 4.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C5D1B2C843C0016525B /* 4.bmp */; };
+		F6897C731B2C843C0016525B /* 5.0.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C5E1B2C843C0016525B /* 5.0.bmp */; };
+		F6897C741B2C843C0016525B /* 5.1.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C5F1B2C843C0016525B /* 5.1.bmp */; };
+		F6897C751B2C843C0016525B /* 5.2.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C601B2C843C0016525B /* 5.2.bmp */; };
+		F6897C761B2C843C0016525B /* 5.3.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C611B2C843C0016525B /* 5.3.bmp */; };
+		F6897C771B2C843C0016525B /* 5.4.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C621B2C843C0016525B /* 5.4.bmp */; };
+		F6897C781B2C843C0016525B /* 5.5.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C631B2C843C0016525B /* 5.5.bmp */; };
+		F6897C791B2C843C0016525B /* 5.6.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C641B2C843C0016525B /* 5.6.bmp */; };
+		F6897C7A1B2C843C0016525B /* 5.7.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C651B2C843C0016525B /* 5.7.bmp */; };
+		F6897C7B1B2C843C0016525B /* 5.8.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C661B2C843C0016525B /* 5.8.bmp */; };
+		F6897C7C1B2C843C0016525B /* 5.9.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C671B2C843C0016525B /* 5.9.bmp */; };
+		F6897C7D1B2C843C0016525B /* 6.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C681B2C843C0016525B /* 6.bmp */; };
+		F6897C7E1B2C843C0016525B /* 7.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C691B2C843C0016525B /* 7.bmp */; };
+		F6897C7F1B2C843C0016525B /* ChoixFont.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C6A1B2C843C0016525B /* ChoixFont.bmp */; };
+		F6897C801B2C843C0016525B /* MenuFont.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C6B1B2C843C0016525B /* MenuFont.bmp */; };
+		F6897C811B2C843C0016525B /* StartGame.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C6C1B2C843C0016525B /* StartGame.bmp */; };
+		F6897C821B2C843C0016525B /* choix.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6897C6D1B2C843C0016525B /* choix.bmp */; };
+		F6ACF4321B2CB19600626B80 /* dessinerSDL.c in Sources */ = {isa = PBXBuildFile; fileRef = F6ACF42E1B2CB19600626B80 /* dessinerSDL.c */; };
+		F6ACF4331B2CB19600626B80 /* jeuSDL.c in Sources */ = {isa = PBXBuildFile; fileRef = F6ACF4301B2CB19600626B80 /* jeuSDL.c */; };
+		F6E8A8021B2D05E2007BF8C4 /* gameover.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6E8A8001B2D05E2007BF8C4 /* gameover.bmp */; };
+		F6E8A8031B2D05E2007BF8C4 /* win.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F6E8A8011B2D05E2007BF8C4 /* win.bmp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,14 +56,50 @@
 /* Begin PBXFileReference section */
 		A38C70521A91E146001CB0E3 /* Projet SDL Xcode6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Projet SDL Xcode6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38C70561A91E146001CB0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A38C70571A91E146001CB0E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A38C70581A91E146001CB0E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A38C705A1A91E146001CB0E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A38C705C1A91E146001CB0E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A38C705F1A91E146001CB0E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A38C70651A91E146001CB0E3 /* Projet SDL Xcode6Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Projet SDL Xcode6Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38C706A1A91E146001CB0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A38C706B1A91E146001CB0E3 /* Projet_SDL_Xcode6Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Projet_SDL_Xcode6Tests.m; sourceTree = "<group>"; };
+		A38C70751A91E35F001CB0E3 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = "<group>"; };
+		A38C70761A91E35F001CB0E3 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = "<group>"; };
+		A38C70781A91E39D001CB0E3 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		A38C707A1A91E430001CB0E3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A38C707C1A91E458001CB0E3 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = "../../Utilisateurs Mac/arthurj972/Library/Frameworks/SDL.framework"; sourceTree = "<group>"; };
+		F6897C1E1B2C7E300016525B /* choix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = choix.c; sourceTree = "<group>"; };
+		F6897C1F1B2C7E300016525B /* choix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = choix.h; sourceTree = "<group>"; };
+		F6897C211B2C7E5E0016525B /* initPlateau.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = initPlateau.c; sourceTree = "<group>"; };
+		F6897C221B2C7E5E0016525B /* initPlateau.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = initPlateau.h; sourceTree = "<group>"; };
+		F6897C231B2C7E5E0016525B /* dessiner.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = dessiner.c; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		F6897C241B2C7E5E0016525B /* dessiner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dessiner.h; sourceTree = "<group>"; };
+		F6897C251B2C7E5E0016525B /* gestionRayon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gestionRayon.c; sourceTree = "<group>"; };
+		F6897C261B2C7E5E0016525B /* gestionRayon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gestionRayon.h; sourceTree = "<group>"; };
+		F6897C571B2C80A10016525B /* constantes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constantes.h; sourceTree = "<group>"; };
+		F6897C591B2C843C0016525B /* 0.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 0.bmp; sourceTree = "<group>"; };
+		F6897C5A1B2C843C0016525B /* 1.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 1.bmp; sourceTree = "<group>"; };
+		F6897C5B1B2C843C0016525B /* 2.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 2.bmp; sourceTree = "<group>"; };
+		F6897C5C1B2C843C0016525B /* 3.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 3.bmp; sourceTree = "<group>"; };
+		F6897C5D1B2C843C0016525B /* 4.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 4.bmp; sourceTree = "<group>"; };
+		F6897C5E1B2C843C0016525B /* 5.0.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 5.0.bmp; sourceTree = "<group>"; };
+		F6897C5F1B2C843C0016525B /* 5.1.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 5.1.bmp; sourceTree = "<group>"; };
+		F6897C601B2C843C0016525B /* 5.2.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 5.2.bmp; sourceTree = "<group>"; };
+		F6897C611B2C843C0016525B /* 5.3.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 5.3.bmp; sourceTree = "<group>"; };
+		F6897C621B2C843C0016525B /* 5.4.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 5.4.bmp; sourceTree = "<group>"; };
+		F6897C631B2C843C0016525B /* 5.5.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 5.5.bmp; sourceTree = "<group>"; };
+		F6897C641B2C843C0016525B /* 5.6.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 5.6.bmp; sourceTree = "<group>"; };
+		F6897C651B2C843C0016525B /* 5.7.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 5.7.bmp; sourceTree = "<group>"; };
+		F6897C661B2C843C0016525B /* 5.8.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 5.8.bmp; sourceTree = "<group>"; };
+		F6897C671B2C843C0016525B /* 5.9.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 5.9.bmp; sourceTree = "<group>"; };
+		F6897C681B2C843C0016525B /* 6.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 6.bmp; sourceTree = "<group>"; };
+		F6897C691B2C843C0016525B /* 7.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 7.bmp; sourceTree = "<group>"; };
+		F6897C6A1B2C843C0016525B /* ChoixFont.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ChoixFont.bmp; sourceTree = "<group>"; };
+		F6897C6B1B2C843C0016525B /* MenuFont.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = MenuFont.bmp; sourceTree = "<group>"; };
+		F6897C6C1B2C843C0016525B /* StartGame.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = StartGame.bmp; sourceTree = "<group>"; };
+		F6897C6D1B2C843C0016525B /* choix.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = choix.bmp; sourceTree = "<group>"; };
+		F6ACF42E1B2CB19600626B80 /* dessinerSDL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dessinerSDL.c; sourceTree = "<group>"; };
+		F6ACF42F1B2CB19600626B80 /* dessinerSDL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dessinerSDL.h; sourceTree = "<group>"; };
+		F6ACF4301B2CB19600626B80 /* jeuSDL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jeuSDL.c; sourceTree = "<group>"; };
+		F6ACF4311B2CB19600626B80 /* jeuSDL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jeuSDL.h; sourceTree = "<group>"; };
+		F6E8A8001B2D05E2007BF8C4 /* gameover.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = gameover.bmp; sourceTree = "<group>"; };
+		F6E8A8011B2D05E2007BF8C4 /* win.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = win.bmp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A38C707D1A91E458001CB0E3 /* SDL.framework in Frameworks */,
+				A38C707B1A91E430001CB0E3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +125,8 @@
 		A38C70491A91E146001CB0E3 = {
 			isa = PBXGroup;
 			children = (
+				A38C707C1A91E458001CB0E3 /* SDL.framework */,
+				A38C707A1A91E430001CB0E3 /* Cocoa.framework */,
 				A38C70541A91E146001CB0E3 /* Projet SDL Xcode6 */,
 				A38C70681A91E146001CB0E3 /* Projet SDL Xcode6Tests */,
 				A38C70531A91E146001CB0E3 /* Products */,
@@ -76,10 +145,23 @@
 		A38C70541A91E146001CB0E3 /* Projet SDL Xcode6 */ = {
 			isa = PBXGroup;
 			children = (
-				A38C70571A91E146001CB0E3 /* AppDelegate.h */,
-				A38C70581A91E146001CB0E3 /* AppDelegate.m */,
-				A38C705C1A91E146001CB0E3 /* Images.xcassets */,
-				A38C705E1A91E146001CB0E3 /* MainMenu.xib */,
+				F6ACF42E1B2CB19600626B80 /* dessinerSDL.c */,
+				F6ACF42F1B2CB19600626B80 /* dessinerSDL.h */,
+				F6ACF4301B2CB19600626B80 /* jeuSDL.c */,
+				F6ACF4311B2CB19600626B80 /* jeuSDL.h */,
+				A38C70781A91E39D001CB0E3 /* main.c */,
+				F6897C211B2C7E5E0016525B /* initPlateau.c */,
+				F6897C221B2C7E5E0016525B /* initPlateau.h */,
+				F6897C231B2C7E5E0016525B /* dessiner.c */,
+				F6897C241B2C7E5E0016525B /* dessiner.h */,
+				F6897C251B2C7E5E0016525B /* gestionRayon.c */,
+				F6897C261B2C7E5E0016525B /* gestionRayon.h */,
+				F6897C1E1B2C7E300016525B /* choix.c */,
+				F6897C1F1B2C7E300016525B /* choix.h */,
+				F6897C571B2C80A10016525B /* constantes.h */,
+				A38C70751A91E35F001CB0E3 /* SDLMain.h */,
+				A38C70761A91E35F001CB0E3 /* SDLMain.m */,
+				F6897C581B2C843C0016525B /* img */,
 				A38C70551A91E146001CB0E3 /* Supporting Files */,
 			);
 			path = "Projet SDL Xcode6";
@@ -89,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				A38C70561A91E146001CB0E3 /* Info.plist */,
-				A38C705A1A91E146001CB0E3 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,6 +190,36 @@
 				A38C706A1A91E146001CB0E3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6897C581B2C843C0016525B /* img */ = {
+			isa = PBXGroup;
+			children = (
+				F6897C591B2C843C0016525B /* 0.bmp */,
+				F6897C5A1B2C843C0016525B /* 1.bmp */,
+				F6897C5B1B2C843C0016525B /* 2.bmp */,
+				F6E8A8001B2D05E2007BF8C4 /* gameover.bmp */,
+				F6E8A8011B2D05E2007BF8C4 /* win.bmp */,
+				F6897C5C1B2C843C0016525B /* 3.bmp */,
+				F6897C5D1B2C843C0016525B /* 4.bmp */,
+				F6897C5E1B2C843C0016525B /* 5.0.bmp */,
+				F6897C5F1B2C843C0016525B /* 5.1.bmp */,
+				F6897C601B2C843C0016525B /* 5.2.bmp */,
+				F6897C611B2C843C0016525B /* 5.3.bmp */,
+				F6897C621B2C843C0016525B /* 5.4.bmp */,
+				F6897C631B2C843C0016525B /* 5.5.bmp */,
+				F6897C641B2C843C0016525B /* 5.6.bmp */,
+				F6897C651B2C843C0016525B /* 5.7.bmp */,
+				F6897C661B2C843C0016525B /* 5.8.bmp */,
+				F6897C671B2C843C0016525B /* 5.9.bmp */,
+				F6897C681B2C843C0016525B /* 6.bmp */,
+				F6897C691B2C843C0016525B /* 7.bmp */,
+				F6897C6A1B2C843C0016525B /* ChoixFont.bmp */,
+				F6897C6B1B2C843C0016525B /* MenuFont.bmp */,
+				F6897C6C1B2C843C0016525B /* StartGame.bmp */,
+				F6897C6D1B2C843C0016525B /* choix.bmp */,
+			);
+			path = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,8 +302,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A38C705D1A91E146001CB0E3 /* Images.xcassets in Resources */,
-				A38C70601A91E146001CB0E3 /* MainMenu.xib in Resources */,
+				F6897C701B2C843C0016525B /* 2.bmp in Resources */,
+				F6897C7A1B2C843C0016525B /* 5.7.bmp in Resources */,
+				F6897C751B2C843C0016525B /* 5.2.bmp in Resources */,
+				F6897C721B2C843C0016525B /* 4.bmp in Resources */,
+				F6897C711B2C843C0016525B /* 3.bmp in Resources */,
+				F6897C7E1B2C843C0016525B /* 7.bmp in Resources */,
+				F6897C821B2C843C0016525B /* choix.bmp in Resources */,
+				F6897C7F1B2C843C0016525B /* ChoixFont.bmp in Resources */,
+				F6897C7B1B2C843C0016525B /* 5.8.bmp in Resources */,
+				F6897C731B2C843C0016525B /* 5.0.bmp in Resources */,
+				F6E8A8031B2D05E2007BF8C4 /* win.bmp in Resources */,
+				F6897C781B2C843C0016525B /* 5.5.bmp in Resources */,
+				F6897C811B2C843C0016525B /* StartGame.bmp in Resources */,
+				F6897C7D1B2C843C0016525B /* 6.bmp in Resources */,
+				F6897C6E1B2C843C0016525B /* 0.bmp in Resources */,
+				F6897C7C1B2C843C0016525B /* 5.9.bmp in Resources */,
+				F6E8A8021B2D05E2007BF8C4 /* gameover.bmp in Resources */,
+				F6897C761B2C843C0016525B /* 5.3.bmp in Resources */,
+				F6897C741B2C843C0016525B /* 5.1.bmp in Resources */,
+				F6897C791B2C843C0016525B /* 5.6.bmp in Resources */,
+				F6897C801B2C843C0016525B /* MenuFont.bmp in Resources */,
+				F6897C6F1B2C843C0016525B /* 1.bmp in Resources */,
+				F6897C771B2C843C0016525B /* 5.4.bmp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,8 +342,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A38C705B1A91E146001CB0E3 /* main.m in Sources */,
-				A38C70591A91E146001CB0E3 /* AppDelegate.m in Sources */,
+				A38C70791A91E39D001CB0E3 /* main.c in Sources */,
+				F6ACF4331B2CB19600626B80 /* jeuSDL.c in Sources */,
+				F6897C271B2C7E5E0016525B /* initPlateau.c in Sources */,
+				F6897C281B2C7E5E0016525B /* dessiner.c in Sources */,
+				F6897C291B2C7E5E0016525B /* gestionRayon.c in Sources */,
+				A38C70771A91E35F001CB0E3 /* SDLMain.m in Sources */,
+				F6ACF4321B2CB19600626B80 /* dessinerSDL.c in Sources */,
+				F6897C201B2C7E300016525B /* choix.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,17 +370,6 @@
 			targetProxy = A38C70661A91E146001CB0E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A38C705E1A91E146001CB0E3 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A38C705F1A91E146001CB0E3 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A38C706D1A91E146001CB0E3 /* Debug */ = {
@@ -325,7 +452,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "Projet SDL Xcode6/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,7 +468,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "Projet SDL Xcode6/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -398,6 +535,7 @@
 				A38C70711A91E146001CB0E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A38C70721A91E146001CB0E3 /* Build configuration list for PBXNativeTarget "Projet SDL Xcode6Tests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +544,7 @@
 				A38C70741A91E146001CB0E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
